@@ -1,0 +1,155 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'); */
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+
+@media screen and (min-width: 380px) {
+
+    a[href='#main'] {
+       
+        font: 400 18px 'Arial';
+        color: white;
+        background: #3F2131;
+        
+
+        display: block;
+        width: 50px;
+        height: 50px;
+
+        position: fixed;
+        float: right;
+        top: 650px;
+        right: 60px;
+        
+        text-align: center;
+        line-height: 50px;
+        border-radius: 25px;    
+    }
+
+    #main {
+        background: url(https://images.hdqwalls.com/download/planetscape-galaxy-4k-ao-1600x900.jpg) no-repeat;
+        background-size: cover;
+        height: 100vh;
+        width: 100%; 
+        min-width: 700px;
+        filter: blur(0px);
+
+
+        color: white;
+        font: 400 18px 'Arial';
+    }
+
+    .button-block {
+        float: left;
+        
+        min-width: 220px;
+        width: calc(100% / 3);
+        height: 60px;
+    }
+    
+    .button-block div  {
+        
+        width: 200px;
+        height: 60px;
+
+        line-height: 60px;
+        color: white;
+        text-align: center;
+        margin: 0 auto;
+        letter-spacing: 2px;
+    }
+
+    .button-block a {
+        color: white;
+        line-height: 60px;
+    }
+
+    .button-block div:hover {
+
+        border-bottom: 2px solid white;   
+    }
+    
+
+
+    /* PROJECTS */
+
+    #projects {
+        width: 100%;
+        padding-top: 20px;
+        height: 100vh;        
+        color: grey;
+        font: 400 18px 'Arial';
+    }
+
+    #projects > h1 {
+        font: 500 30px 'Arial';
+        text-align: center;
+        margin: 0 auto 20px auto;
+        letter-spacing: 2px;
+    }
+
+    .prj {
+        margin: 0 auto;
+        width: 80%;
+        min-width: 450px;
+        height: 260px;
+    }
+
+    .prj-info {
+        float: left;
+        width: 50%;
+        min-width: 300px;
+    }
+
+    .prj-info a {
+        display: block;
+        font-size: 22px;
+        margin: 10px 10px 10px 0;
+    }
+
+
+    .prj-info  {
+        /* justify-content: stretch; */
+        line-height: 28px;
+    }
+
+
+    /* Pictures of projects */
+    .slider {
+        float: left;
+        text-align: center;
+        
+        width: 50%;
+        min-width: 250px;
+        height: 100%;
+    }
+
+    .prj img {
+        margin: 5px 0 5px 0;
+        width: 250px;
+        height: 250px;
+    }
+    
+    .prj img:hover {
+        opacity: 0.5;
+    }
+
+    /* REVIEWS */
+    #reviews {
+        width: 100%;
+        height: 100vh;
+    }
+
+
+    #footer {
+        height: 50px;
+        width: 100%;
+        background: #313131;
+    }
+}
+
+
