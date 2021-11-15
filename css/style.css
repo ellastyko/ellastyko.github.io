@@ -6,6 +6,10 @@
     text-decoration: none;
 }
 
+:root {
+    /* VARS */
+}
+
 
 @media screen and (min-width: 380px) {
 
@@ -14,7 +18,7 @@
         font: 400 18px 'Arial';
         color: white;
         background: #3F2131;
-        
+        z-index: 1;
 
         display: block;
         width: 50px;
@@ -36,10 +40,7 @@
         height: 100vh;
         width: 100%; 
         min-width: 700px;
-        filter: blur(0px);
 
-
-        color: white;
         font: 400 18px 'Arial';
     }
 
@@ -57,7 +58,6 @@
         height: 60px;
 
         line-height: 60px;
-        color: white;
         text-align: center;
         margin: 0 auto;
         letter-spacing: 2px;
@@ -79,16 +79,16 @@
 
     #projects {
         width: 100%;
-        padding-top: 20px;
+        padding-top: 30px;
         height: 100vh;        
         color: grey;
         font: 400 18px 'Arial';
     }
 
     #projects > h1 {
-        font: 500 30px 'Arial';
+        font: 500 35px 'Arial';
         text-align: center;
-        margin: 0 auto 20px auto;
+        margin: 0 auto 30px auto;
         letter-spacing: 2px;
     }
 
@@ -102,7 +102,9 @@
     .prj-info {
         float: left;
         width: 50%;
-        min-width: 300px;
+        min-width: 400px;
+        text-align: justify;
+        line-height: 28px;
     }
 
     .prj-info a {
@@ -112,14 +114,8 @@
     }
 
 
-    .prj-info  {
-        /* justify-content: stretch; */
-        line-height: 28px;
-    }
-
-
     /* Pictures of projects */
-    .slider {
+    .slider {     
         float: left;
         text-align: center;
         
@@ -128,15 +124,34 @@
         height: 100%;
     }
 
-    .prj img {
+    .slider img {
+        position: relative;
         margin: 5px 0 5px 0;
         width: 250px;
         height: 250px;
     }
     
-    .prj img:hover {
-        opacity: 0.5;
+    .slider img:hover {
+        transition: ease-in-out 0.5s;
+        opacity: 0.6;
     }
+
+    .slider img > div {
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: red;
+        width: 50px;
+        height: 50px;
+        z-index: 2;
+    }
+    
+
+
+
+
+
 
     /* REVIEWS */
     #reviews {
